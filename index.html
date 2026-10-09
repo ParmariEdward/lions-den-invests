@@ -1,1 +1,131 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <title>Lion's Den Invests</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101010;
+      color: #f7f4ec;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #393329;
+    }
+    .brand { color: #e8bb55; font-weight: bold; }
+    .hero {
+      padding: 65px 22px;
+      text-align: center;
+      background: linear-gradient(145deg, #242016, #101010);
+    }
+    .hero h1 { font-size: 38px; line-height: 1.15; }
+    .gold { color: #e8bb55; }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #e8bb55;
+      color: #17130b;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    main { max-width: 850px; margin: auto; padding: 24px 18px; }
+    .card {
+      background: #1c1c1c;
+      border: 1px solid #413823;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+    .muted { color: #c1bdb3; }
+    .notice {
+      border-left: 4px solid #e8bb55;
+      padding: 12px;
+      background: #242016;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #aaa;
+      border-top: 1px solid #393329;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">🦁 LION'S DEN INVESTS</div>
+    <span>KENYA</span>
+  </header>
+
+  <section class="hero">
+    <p class="gold">BUILD WITH PURPOSE</p>
+    <h1>Your Vision.<br><span class="gold">Your Future.</span></h1>
+    <p class="muted">
+      Explore investment opportunities and learn how
+      responsible investing works.
+    </p>
+    <a class="button" href="#opportunities">Explore the Platform</a>
+  </section>
+
+  <main>
+    <section id="opportunities">
+      <h2>Investment Opportunities</h2>
+      <div class="card">
+        <h3>Sample Business Opportunity</h3>
+        <p class="muted">
+          This is a demonstration listing. No real shares
+          are offered or sold through this website.
+        </p>
+        <p><strong class="gold">DEMO ONLY</strong></p>
+        <button class="button" onclick="showNotice()">
+          View Details
+        </button>
+        <p id="notice" class="muted" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Payment Methods</h2>
+      <p>M-Pesa and bank transfer integration planned.</p>
+      <p class="muted">
+        Payments are not enabled. Do not send money to
+        this demonstration website.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Invest Responsibly</h2>
+      <p class="muted">
+        Investments involve risk and you may lose money.
+        Real investment offers will only be launched after
+        the applicable legal and regulatory requirements
+        have been confirmed.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Lion's Den Invests</p>
+    <p>Demo website — no real investments accepted.</p>
+  </footer>
+
+  <script>
+    function showNotice() {
+      document.getElementById("notice").textContent =
+        "This is a demo opportunity. Real investment purchases are not available yet.";
+    }
+  </script>
+</body>
+</html>
+
